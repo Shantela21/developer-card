@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+}
+
+.portfolio-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    overflow: hidden;
+    width: 350px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.card-banner {
+    background: linear-gradient(135deg, #182848, #4b6cb7);
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.card-banner img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid white;
+    background: white;
+}
+
+.status-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 12px;
+    color: white;
+}
+
+.status-badge.active {
+    background-color: #28a745;
+}
+
+.status-badge.inactive {
+    background-color: #dc3545;
+}
+
+.card-info {
+    padding: 20px;
+}
+
+.card-info h2 {
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.card-info p {
+    margin: 8px 0;
+    color: #555;
+}
+
+.card-info a {
+    color: #4b6cb7;
+    text-decoration: none;
+}
+
+.card-info a:hover {
+    text-decoration: underline;
+}
+
+.skills {
+    margin: 10px 0;
+}
+
+.skill-badge {
+    display: inline-block;
+    background-color: #e3eafc;
+    color: #2c3e50;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: 12px;
+    margin: 3px;
+    font-weight: 500;
+}
+
+.bio {
+    margin-top: 10px;
+    font-style: italic;
+    color: #444;
+}
